@@ -18,6 +18,13 @@
         compatible = "zmk,keymap";
 
         default_layer {
+//-----------------------------------
+//|NUMLOCK|SLASH|MINUS|   ASTERISK   |
+//|   7   |  8  |  9  |     NONE     |
+//|   4   |  5  |  6  |     PLUS     |
+//|   1   |  2  |  3  |     NONE     |
+//|  NONE |  0  |  .  | 'TO 1' ENTER |
+//-----------------------------------
             bindings = <
                 &kp KP_NLCK    &kp KP_SLASH    &kp KP_MINUS  &kp KP_ASTERISK
                 &kp KP_N7      &kp KP_N8       &kp KP_N9     &none
@@ -28,6 +35,13 @@
         };
 
          func_layer {
+//---------------------------------------------------------------
+//|      NONE     |     NONE     |      RESET       | BOOTLOADER |
+//| OUTPUT-TOGGLE |  OUTPUT-USB  | OUTPUT-BLUETOOTH |    NONE    |
+//| BT CONNECT 3  |  BT PREV CON |    BT NEXT CON   |   BT CLEAR |
+//| BT CONNECT 0  | BT CONNECT 1 |   BT CONNECT 2   |    NONE    |
+//|      NONE     |     NONE     |       NONE       | TO DEFAULT |
+//---------------------------------------------------------------
              bindings = <
                 &none           &none           &sys_reset      &bootloader
                 &out OUT_TOG    &out OUT_USB    &out OUT_BLE    &none
